@@ -129,7 +129,7 @@ public class IronSourceAdsPlugin extends CordovaPlugin
             this.hideBannerAction(args, callbackContext);
             return true;
         }
-
+/**
         else if (action.equals("hasOfferwall")) {
             this.hasOfferwallAction(args, callbackContext);
             return true;
@@ -139,7 +139,7 @@ public class IronSourceAdsPlugin extends CordovaPlugin
             this.showOfferwallAction(args, callbackContext);
             return true;
         }
-
+**/
         else if (action.equals("loadInterstitial")) {
             this.loadInterstitialAction(args, callbackContext);
             return true;
@@ -496,7 +496,7 @@ public class IronSourceAdsPlugin extends CordovaPlugin
         this.emitWindowEvent(EVENT_INTERSTITIAL_CLICKED, new JSONObject());
     }
 
-    /** ----------------------- OFFERWALL --------------------------- */
+    /** ----------------------- OFFERWALL --------------------------- /
 
     private void showOfferwallAction(JSONArray args, final CallbackContext callbackContext) throws JSONException {
 
@@ -569,7 +569,7 @@ public class IronSourceAdsPlugin extends CordovaPlugin
         this.emitWindowEvent(EVENT_OFFERWALL_CLOSED);
     }
 
-    /** ----------------------- BANNER --------------------------- */
+    **/ ----------------------- BANNER --------------------------- */
     private void showBannerAction(JSONArray args, final CallbackContext callbackContext) {
 
         final IronSourceAdsPlugin self = this;
